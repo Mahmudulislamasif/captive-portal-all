@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@layer base {
+    h6
+    {
+      @apply text-[#21212];
+    }
+    h3
+    {
+      @apply text-primary-0 text-xl font-bold;
+    }
+}
+@layer components
+{
+  .main-container
+  {
+    @apply font-poppins grid min-h-screen md:bg-none bg-background  bg-cover bg-no-repeat;
+  }
+  .section-container
+  {
+    @apply md:w-[56%] w-full bg-secondary-0  bg-background-two bg-cover bg-no-repeat tripple-extra-large:pl-72 tripple-extra-large:pr-72 double-extra-large:pl-56 double-extra-large:pr-56  extra-large:pr-44 extra-large:pl-44 large:pl-32 large:pr-32 md:pl-20 md:pr-20 pl-5 pr-5 py-5 rounded-md flex flex-col justify-center md:m-0 m-4;
+  }
+  .icon-container
+  {
+    @apply md:absolute static  md:top-4 top-0 flex items-center justify-center gap-1;
+  }
+  .heading-h1
+  {
+    @apply md:text-4xl text-2xl md:text-left text-center font-medium mb-2;
+  }
+  .paragraph-p
+  {
+    @apply md:text-base text-sm font-normal;
+  }
+  .input-label
+  {
+    @apply block text-sm font-bold text-primary-0 mb-[10px]
+  }
+  .input-type
+  {
+    @apply mt-1 px-4 py-3 border border-primary-0 border-opacity-25 rounded-md bg-secondary-0  focus:outline-none focus:border-main-0  focus:ring-main-0 block w-full shadow-sm sm:text-sm;
+  }
+  .floating-focus:focus ~ .input-text{
+    @apply text-white bg-[#30A2FF] transform transition-all duration-500 -translate-y-5 translate-x-3 px-3 scale-75;
+  }
+  .floating-focus-two:focus ~ .input-text{
+    @apply text-white bg-[#8cded5] transform transition-all duration-500 -translate-y-5 translate-x-3 px-3 scale-75;
+  }
+  .floating-focus-three:focus ~ .input-text{
+    @apply text-white bg-[#C44141] transform transition-all duration-500 -translate-y-5 translate-x-3 px-3 scale-75;
+  }
+  .floating-focus-four:focus ~ .input-text{
+    @apply text-white bg-[#40A34A] transform transition-all duration-500 -translate-y-5 translate-x-3 px-3 scale-75;
+  }
+  .floating-focus-five:focus ~ .input-text{
+    @apply text-black bg-white transform transition-all duration-500 -translate-y-5 translate-x-3 px-3 scale-75;
+  }
+}
